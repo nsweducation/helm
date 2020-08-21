@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "openshift-v4-namespace.fullname" . }}
+  labels:
+    {{- include "openshift-v4-namespace.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "openshift-v4-namespace.selectorLabels" . | nindent 4 }}
