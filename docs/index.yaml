@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  openshift-v4-namespace:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-08-21T12:21:09.970684358+10:00"
+    description: A Helm chart for Kubernetes
+    digest: 2923d75292e74b9757e7ad06397855c9f878d889950426a4484d79d75bf269aa
+    name: openshift-v4-namespace
+    type: application
+    urls:
+    - openshift-v4-namespace-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-08-21T12:21:09.9702134+10:00"
